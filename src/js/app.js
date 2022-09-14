@@ -1,8 +1,11 @@
 // TODO: write your code here
 /*
-import sum from './basic';
-
-console.log('worked');
-
-console.log(sum([1, 2]));
+export default function orderByProps(obj , keys) {
+  const propsArray = [];
+  for (const prop in obj) {
+    propsArray.push({ key: prop, value: obj[prop] });
+  }
+  const sortedArray = propsArray.sort((keys) => keys[0] - keys[1]);
+  return sortedArray;
+}
 */
